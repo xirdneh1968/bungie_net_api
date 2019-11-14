@@ -1,0 +1,10 @@
+README.md
+bungie_net_api/__init__.py
+bungie_net_api/api.new.py
+bungie_net_api/api.py
+bungie_net_api/utility.py
+bungie_net_api.egg-info/PKG-INFO
+bungie_net_api.egg-info/SOURCES.txt
+bungie_net_api.egg-info/dependency_links.txt
+bungie_net_api.egg-info/not-zip-safe
+bungie_net_api.egg-info/top_level.txt

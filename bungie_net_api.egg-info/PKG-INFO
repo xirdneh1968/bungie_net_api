@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bungie-destiny2-api
+Version: 0.1
+Summary: Python implementation of BungieNet.Platform.Destiny API calls
+Home-page: http://github.com/xirdneh1968/bungie_destiny2_api
+Author: xirdneh1968
+Author-email: xirdneh1968@zumina.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

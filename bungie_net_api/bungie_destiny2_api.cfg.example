@@ -1,0 +1,4 @@
+[default]
+debug = 0
+[api]
+API-KEY = <32 digit hex api key>
