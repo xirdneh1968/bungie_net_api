@@ -662,7 +662,7 @@ def call_bungie_api(method):
     # takes a BungieNet API method as documented at
     # https://www.bungie.net/platform/destiny/help/
 
-    api_base = 'https://www.bungie.net/Platform/Destiny'
+    api_base = 'https://www.bungie.net/Platform/Destiny2'
     #api_base = 'https://www.bungie.net/Platform/Destiny2'
     call_url = api_base + method
 
@@ -763,3 +763,25 @@ def get_characters(destiny_membership_id=None, membership_type=None):
         _character[class_type] = char_id
 
     return _character
+
+# get_item_by_hash at
+# https://www.bungie.net/platform/destiny/help/
+
+def get_item_by_hash(entity_type=None, hash_identifier=None):
+    """get_item_by_hash()"""
+
+    if DEBUG:
+        print(("DEBUG: call_bungie_api(/Manifest/"
+               + entity_type + "/"
+               + hash_identifier + "/"))
+
+
+    manifest_item = call_bungie_api('/Manifest/'
+                           + entity_type + '/'
+                           + hash_identifier + '/')
+    error_code = manifest_item['ErrorCode']
+
+    if DEBUG:
+        print("DEBUG: ErrorCode = ", error_code)
+
+    return manifest_item
